@@ -6,8 +6,19 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class BaseCharacterController : MonoBehaviour
 {
-   public void Movement(CallbackContext ctx)
+    private Vector2 movementInput;
+    [SerializeField] float movementSpeed;
+    public void Movement(CallbackContext ctx)
     {
-        Debug.Log($"Context: {ctx.ReadValue<Vector2>()}"); 
+        //MovementInput is set by unity events
+        movementInput = ctx.ReadValue<Vector2>(); //comment
+
     }
+    
+    private void Update()
+    {
+
+    transform.position += new Vector3(movementInput.x, movementInput.y, 0) * Time.deltaTime * movementSpeed;
+    } 
+    
 }
