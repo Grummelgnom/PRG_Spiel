@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Swamp
   - HighGras
+  - FightEncounter
   layers:
   - Default
   - TransparentFX

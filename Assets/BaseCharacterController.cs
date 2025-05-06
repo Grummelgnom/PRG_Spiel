@@ -66,4 +66,9 @@ public class BaseCharacterController : MonoBehaviour
             isSlowed = false;
         }
     }
+
+    private void CheckForEncounter()
+    { 
+        FightManager.Instance.CheckForEncounter();
+    }
 }
