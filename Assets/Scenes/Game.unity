@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 499818116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51dd9403ad2051f4192e4797458ae6ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 40a5a520ac27ff648a4565cc8fb0a470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
@@ -18665,9 +18665,10 @@ GameObject:
   - component: {fileID: 2060560355}
   - component: {fileID: 2060560357}
   - component: {fileID: 2060560356}
+  - component: {fileID: 2060560358}
   m_Layer: 0
   m_Name: FightEncounter
-  m_TagString: Untagged
+  m_TagString: FightEncounter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18681,8 +18682,8 @@ Transform:
   m_GameObject: {fileID: 2060560354}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.9849, y: 0, z: 0}
+  m_LocalScale: {x: 1.3080206, y: 0.51844084, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2110157857}
@@ -18858,6 +18859,42 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &2060560358
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060560354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &2110157855
 GameObject:
   m_ObjectHideFlags: 0
@@ -95492,9 +95529,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2129572193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea023f4034e8e544bb038b25b4b1e663, type: 3}
+  m_Script: {fileID: 11500000, guid: 4111d7b1f519cff4ea7ab7a20d058408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chanceToEncounter: 5
 --- !u!114 &2129572196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95504,10 +95542,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2129572193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d6c0066fac576149b1ffb4374056ed3, type: 3}
+  m_Script: {fileID: 11500000, guid: 41669287413048e4eb7ef6ce1eb89c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceToEncounter: 0
 --- !u!114 &2129572197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95517,7 +95554,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2129572193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d77922649dfae245a39695b427e8d24, type: 3}
+  m_Script: {fileID: 11500000, guid: 0582a3db171c52140a6eb551aa4ee4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ExperiencePoints: 0

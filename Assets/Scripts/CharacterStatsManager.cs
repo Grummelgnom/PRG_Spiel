@@ -12,6 +12,7 @@ public class CharacterStatsManager : MonoBehaviour
     private Dictionary<string, bool> equipment;
     private Dictionary<string, int> items;
 
+
     void Start()
     {
         if (Instance == null)
@@ -25,17 +26,15 @@ public class CharacterStatsManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     private void Load()
     {
-        // Load character stats from a file or database
-        // For now, we will just initialize them with some default values
-        ExperiencePoints = 0;
-        Level = 1;
-        Health = 100;
-        MaxHealth = 100;
+        ExperiencePoints =  0;
+        Level =  1;
+        Health =  100;
+        MaxHealth =  100;
 
         equipment = new Dictionary<string, bool>();
         items = new Dictionary<string, int>();
     }
-
 }
